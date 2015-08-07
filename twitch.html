@@ -1,0 +1,14 @@
+<body ng-app = 'test'>
+  <div class = 'container'>
+  <div ng-controller="TestController">
+<ul class="nav nav-pills">
+  <li ng-class="{active: thisOn(1)}"><a href="" ng-click = "setArea(1)">Active</a></li>
+  <li ng-class="{active: thisOn(2)}"><a href="" ng-click = "setArea(2)">Inactive</a></li>
+  <li ng-class="{active: thisOn(3)}"><a href="" ng-click = "setArea(3)">Everyone</a></li>
+</ul>
+      <div>
+        {{areaOn}}
+      </div>
+  </div>
+  </div>
+</body>
